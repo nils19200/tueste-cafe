@@ -30,28 +30,32 @@ a {
 
 .header {
     width: 100%;
-    max-width: 100%;
+    max-width:1280px;
     margin: 0 auto;
     display: flex;
+    flex-direction:column;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
     padding: 24px 48px;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 0.18rem;;
     color: #9a3412;
 }
 
 .menu {
     display: flex;
-    gap: 36px;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 1.2rem;
 }
 
 .menu a {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 /* ---------- HERO ---------- */
@@ -61,43 +65,44 @@ a {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     align-items: center;
-    gap: 48px;
-    padding: 0 48px;
+    gap: 2rem;
+    padding: 0 1.5rem;
 }
 
 .hero-img {
     width: 100%;
-    max-width: 375px;
+    max-width: 100%;
     height:auto;
-    border-radius: 24px;
+    border-radius: 1.5rem;
 }
 
 .hero-texto {
-    width: 640px;
+    width: 100%;
+    text-align: center;
 }
 
 h1 {
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 2.7rem;
+    line-height: 1.15;
     color: #9a3412;
 }
 
 .hero-texto p {
-    font-size: 22px;
-    line-height: 34px;
-    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 1.2rem;
     color: #6b4f3a;
 }
 
 .boton {
     display: inline-block;
-    margin-top: 32px;
-    padding: 18px 44px;
+    margin-top: 2rem;
+    padding: 1.1rem 2.7rem;
     background-color: #9a3412;
     color: #fdf6ec;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 999px;
 }
@@ -105,129 +110,134 @@ h1 {
 /* ---------- CARTA ---------- */
 
 .carta {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 80px 48px;
+    padding: 3.5rem 1.5rem;
 }
 
 .carta h2 {
-    font-size: 48px;
+    font-size: 2.2rem;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 2.2rem;
     color: #9a3412;
 }
 
 .productos {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction:column;
+    gap: 1.5rem;
 }
 
 .producto {
-    width: 280px;
-    padding: 28px;
+    width: 100%;
+    padding: 1.7rem;
     background-color: #ffffff;
-    border-radius: 16px;
+    border-radius: 1rem;
     box-shadow: 0 8px 24px rgba(59, 42, 26, 0.08);
 }
 
 .producto h3 {
-    font-size: 24px;
-    margin-bottom: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .producto p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1rem;
     color: #6b4f3a;
 }
 
 .producto .precio {
-    font-size: 28px;
+    font-size: 1.7rem;
     font-weight: bold;
-    margin-top: 16px;
+    margin-top: 1rem;
     color: #9a3412;
 }
 
 /* ---------- HORARIO Y UBICACIÓN ---------- */
 
 .info {
-    width: 1280px;
+    width: 1005;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    gap: 48px;
-    padding: 0 48px 80px;
+    flex-direction:column;
+    gap: 1.5rem;
+    padding: 0 1.5rem 3.5rem;
 }
 
 .info-box {
-    width: 568px;
-    height: 300px;
-    padding: 40px;
+    width: 100%;
+    min-width: auto;
+    padding: 2rem;
     background-color: #3b2a1a;
     color: #fdf6ec;
-    border-radius: 16px;
+    border-radius: 1rem;
 }
 
 .info-box h2 {
-    font-size: 36px;
-    margin-bottom: 16px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #fdba74;
 }
 
 .info-box p {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
 }
 
 /* ---------- OPINIÓN ---------- */
 
 .opinion {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 80px 160px;
+    padding: 3.5rem 1.5rem;
     text-align: center;
     background-color: #fff7ed;
 }
 
 .opinion blockquote {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 1.7rem;
+    line-height: 1.1rem;
     font-style: italic;
     color: #9a3412;
 }
 
 .opinion cite {
     display: block;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style: normal;
-    margin-top: 24px;
+    margin-top: 1.5rem;
     color: #6b4f3a;
 }
 
 /* ---------- FOOTER ---------- */
 
 .footer {
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction:column;
+    justify-content:center;
     align-items: center;
-    padding: 40px 48px;
+    padding: 2.5rem 1.5rem;
     border-top: 1px solid #e7d5c0;
 }
 
 .footer-brand {
-    font-size: 16px;
+    font-size: 1rem;
     color: #6b4f3a;
 }
 
 .footer-links {
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .footer-links a {
-    font-size: 16px;
+    font-size: 1rem;
 }
